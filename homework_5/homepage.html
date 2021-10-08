@@ -3,33 +3,180 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css?v=1"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Muddy Paws</title>
   </head>
-
 
   <body>
     <header>
-      <h1>Welcome! Ready to play “Shut The Box”?</h1>
+      <!--Head -->
+      <div class="head">
+        <span id="muddy">MUDDY</span>
+        <input type="text" placeholder="Search..">
+        <i class="fa fa-user" id="user"></i>
+        <i class="fa fa-shopping-cart" id="cart"></i>
+      </div>
+      
+      <!--Navigation Bar -->
+      <div class="topnav">
+        <a href="#dogs">DOGS</a>
+        <a href="#cats">CATS</a>
+        <a href="#all">SHOP ALL</a>
+      </div>
+      
     </header>
-
-
+    
     <main>
-
+      
+      <!--Questionnaire -->
       <section>
-        <h2>Choose a username</h2>
-
-        <p>
-          So that we can post your score(s), please choose a username.
-        </p>
-        
         <fieldset>
-          <label for="textboxId">Username: </label>
-          <input id="textboxId" type="text">
-          <input id="result" type = "button" value="Submit" onclick="welcome();">
+          <h2>Enter your pet's info for a personalized experience!</h2>
+
+          <form>
+            <!--Dog or Cat -->
+            <div>
+              <input type="radio" id="dog" name="Dog">
+              <label for="dog">Dog</label>
+              <span>or</span>
+              <input type="radio" id="cat" name="Cat">
+              <label for="cat">Cat</label>
+            </div>
+           
+           <br>
+
+            <!--Name -->
+            <div>
+              <label for="nameId">Name</label>
+              <br>
+              <input id="nameId" type="text" name="nameSubmitted" placeholder="Enter your pet's name">
+            </div>
+           
+            <br>
+
+            <!--Weight -->
+            <div class="select_box" style="width:200px;">
+              <label for="weight">Weight</label>
+              <br>
+              <select id="weight">
+                <option value="0">Select</option>
+                <option value="1">Under 10 lbs</option>
+                <option value="2">10-30 lbs</option>
+                <option value="3">30-50 lbs</option>
+                <option value="4">Above 50 lbs</option>
+              </select>
+            </div>
+          
+            <br>
+           
+            <!--Favorite Color -->
+            <div class="select_box" style="width:200px;">
+              <label for="favcolor">Favorite Color</label>
+              <br>
+              <select id="favcolor">
+                <option value="0">Select</option>
+                <option value="1">Blackberry</option>
+                <option value="2">Strawberry</option>
+                <option value="3">Crazyberry</option>
+                <option value="4">Fire Orange</option>
+              </select>
+            </div>
+
+            <br>
+            <input type="submit" value="Submit">
+            
+          </form>
+          
+          <!--Option for don't show -->
+          <input id='noshow' type="checkbox"> Don't show again
+          
         </fieldset>
         
       </section>
 
+      <br>
+      <!--Shop Cats -->
+      <section>
+        <input type="button" value="SHOP ALL CATS">
+        <table class="table">
+          <thead>
+            <tr>
+              <td class="td"><img src="Img/cat collar.png" alt="cat collar" width=200></td>
+              <td class="td"><img src="Img/cat backpack.png" alt="cat backpack"></td>
+              <td class="td"><img src="Img/cat food.png" alt="cat food"></td>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <!--Review Start -->
+            <tr>
+              <td>"</td>
+              <td>"</td>
+              <td>"</td>
+            </tr>
+            <!--Review Content -->
+            <tr>
+              <td>The GPS collar worked so well with my cat!</td>
+              <td>All time favorite!</td>
+              <td>All time favorite!</td>
+            </tr>
+            <!--Review User Name -->
+            <tr>
+              <td>—Kat788</td>
+              <td>—Anonymous Customer</td>
+              <td>—Anonymous Customer</td>
+            </tr>
+            
+          </tbody>
+          
+        </table>
+        
+
+      </section>
+      
+      <br>
+      <!--Shop Dogs-->
+      <section>
+        <input type="button" value="SHOP ALL DOGS">
+        <table class="table">
+          <thead>
+            <tr>
+              <td class="td"><img src="https://images.unsplash.com/photo-1556229174-5e42a09e45af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=698&q=80" width=200></td>
+              <td class="td">Image2</td>
+              <td class="td">Image3</td>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <!--Review Start -->
+            <tr>
+              <td>"</td>
+              <td>"</td>
+              <td>"</td>
+            </tr>
+            <!--Review Content -->
+            <tr>
+              <td>The GPS collar worked so well with my cat!</td>
+              <td>All time favorite!</td>
+              <td>All time favorite!</td>
+            </tr>
+            <!--Review User Name -->
+            <tr>
+              <td>—Anonymous Customer</td>
+              <td>—Anonymous Customer</td>
+              <td>—Anonymous Customer</td>
+            </tr>
+            
+          </tbody>
+          
+        </table>
+
+      </section>
+      
+      <br>
+      <!--Back To Top Button -->
+      <input type="button" value="BACK TO TOP">    
 
     </main>
 
@@ -37,7 +184,9 @@
     <footer>
       <hr>
       <small>
-        &copy; Rita Dang, 2021
+        &copy; 2021 Muddy Paws Adventure Gear 
+        <span> Terms and Use </span>
+        <span> Privacy Policy </span>
       </small>
     </footer>
 
