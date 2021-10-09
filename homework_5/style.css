@@ -5,10 +5,24 @@ body {
   margin: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 /* Style the footer */
-small{
-  margin: 10px;
+.footer_box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  height: 32px;
+}
+
+hr {
+  border: 1px solid #D98560;
 }
 
 
@@ -20,8 +34,8 @@ small{
   align-items: center;
   background-color: #DFAC8D;
   height: 100px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 #user_icon {
@@ -40,6 +54,8 @@ small{
   padding-bottom: 12px;
   width: 300px;
   height: 14px;
+  border: none;
+  border-radius: 2px;
 }
 
 
@@ -56,10 +72,27 @@ small{
   float: left;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 32px;
   text-decoration: none;
   font-size: 17px;
 }
+
+
+/* Style select buttons*/
+select {
+  font-family: sans-serif;
+  width: 200px;
+  border: 1px solid #E2E8F0;
+  border-radius: 2px;
+  padding: 0.5em 0.5em;
+  font-size: 12px;
+  cursor: pointer;
+  line-height: 1.5;
+  color: #767676;
+}
+
+
+
 
 /* Style the question form section */
 fieldset {
@@ -74,11 +107,22 @@ fieldset {
 .questions {
   text-align: left;
   padding-top: 16px;
+  padding-right: 32px;
+}
+
+#nameId {
+  font-family: sans-serif;
+  border: 1px solid #E2E8F0;
+  border-radius: 2px;
+  padding: 0.5em 0.5em;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 185px;
 }
 
 #noshow, #submit_button {
   float: right;
-  padding-right: 0px;
+  padding-right: 32px;
 }
 
 
@@ -92,12 +136,10 @@ fieldset {
   padding-bottom: 30px;
 }
 
-select {
-  color: #767676;
-}
+
 
 /* Style the CTA buttons */
-#back_button, #cat_button, #dog_button, #submit_button{
+#back_button, #cat_button, #dog_button, #submit_button, #add_cart_button{
   color: #FFFFFF;
   padding: 12px 24px;
   background-color: #686230;
@@ -134,7 +176,7 @@ td {
 }
 
 #cat_button, #dog_button {
-  margin-left: 12%;
+  margin-left: 12.3%;
 }
 
 table {
@@ -179,7 +221,106 @@ table {
 
 /* Style the product browsing page margin */
 .products, .navpath {
-  margin: 14px;
+  margin: 32px;
+}
+
+.navpath {
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
 
+/* Style the product images, descriptions, prices */
+.products h1 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 46px;
+}
+
+.products p {
+  font-size: 16px;
+  margin: 0;
+  color: #8D4C2E;
+  padding-bottom: 24px;
+}
+
+.products h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+
+.dog_product {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 100px;
+}
+
+.single_product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dog_product img {
+  width: 337px;
+  height: 238px;
+  padding-bottom: 10px
+}
+
+.single_product_text {
+  color: black;
+  font-size: 16px;
+}
+
+.single_product_price {
+  color: #D98560;
+  font-size: 16px;
+}
+
+
+/* Style the product details */
+.product_detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 24px;
+  padding-bottom: 10px;
+}
+
+.product_img img {
+  width: 752px;
+  height: 647px;
+}
+
+.product_properties {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 80px;
+  gap: 47px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.size label, .color label {
+  font-size: 16px;
+}
+
+.product_descript p {
+  color: black;
+}
+
+.product_descript h3 {
+  font-size: 20px;
+}
+
+#spin_button {
+  font-weight: bold;
+  border: 1px solid #E2E8F0;
+  padding: 12px 10px;
+}
