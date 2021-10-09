@@ -2,7 +2,15 @@ body {
   text-align: justify;
   font-family: monospace;
   background-color: #FFFFFF;
+  margin: 0;
 }
+
+
+/* Style the footer */
+small{
+  margin: 10px;
+}
+
 
 /* Style the header section */
 .head {
@@ -54,6 +62,10 @@ body {
 }
 
 /* Style the question form section */
+fieldset {
+  border: none;
+}
+
 .question_form {
   background-color: #A2A183;
   color: #FFFFFF; 
@@ -141,7 +153,7 @@ table {
 .within_page_nav{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .round_button {
@@ -161,4 +173,13 @@ table {
 
 #dog_pic {
   float: left;
+  padding-right: 20px;
+  padding-left: 0;
 }
+
+/* Style the product browsing page margin */
+.products, .navpath {
+  margin: 14px;
+}
+
+
