@@ -1,0 +1,164 @@
+body { 
+  text-align: justify;
+  font-family: monospace;
+  background-color: #FFFFFF;
+}
+
+/* Style the header section */
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DFAC8D;
+  height: 100px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#user_icon {
+  padding-right: 20px;
+  font-size: 30px;
+}
+
+#cart_icon {
+  font-size: 30px;
+}
+
+#search_bar {
+  font-family: sans-serif;
+  padding-left: 22px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  width: 300px;
+  height: 14px;
+}
+
+
+/* Style the top navigation */
+.topnav {
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  padding-left: 4px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Style the question form section */
+.question_form {
+  background-color: #A2A183;
+  color: #FFFFFF; 
+}
+
+.questions {
+  text-align: left;
+  padding-top: 16px;
+}
+
+#noshow, #submit_button {
+  float: right;
+  padding-right: 0px;
+}
+
+
+#catdog {
+  float: left;
+  height: 487px;
+  width: 565px;
+  padding-right: 20px;
+  padding-left: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+select {
+  color: #767676;
+}
+
+/* Style the CTA buttons */
+#back_button, #cat_button, #dog_button, #submit_button{
+  color: #FFFFFF;
+  padding: 12px 24px;
+  background-color: #686230;
+  border: none;
+  border-radius: 2px;
+  font-family: monospace;
+}
+
+/* Back to Top Button */
+#backtop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 42px;
+  padding-bottom: 86px;
+}
+
+
+/* Style the Customers Reviews Section */
+.shop_cat, .shop_dog {
+  padding-top: 42px;
+}
+
+.quote, .customer {
+  color: #D98560;
+}
+
+td {
+  text-align: center;
+}
+
+.quote {
+  font-size: 60px;
+}
+
+#cat_button, #dog_button {
+  margin-left: 12%;
+}
+
+table {
+  padding-top: 24px;
+  width="100%";
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style the shop by category navigation section on product browsing pages */
+.dog_category{
+  background-color: #8D4C2E;
+  color: white;
+}
+
+.within_page_nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.round_button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+
+#dog_pic {
+  float: left;
+}

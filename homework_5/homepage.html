@@ -10,17 +10,29 @@
 
   <body>
     <header>
-      <!--Head -->
+      <!--Page Head and Title-->
       <div class="head">
-        <span id="muddy">MUDDY</span>
-        <input type="text" placeholder="Search..">
-        <i class="fa fa-user" id="user"></i>
-        <i class="fa fa-shopping-cart" id="cart"></i>
+        <!--Title Text & Icon-->
+        <span id="logo">
+          <a> 
+          <img src="img/logo.png" alt="store logo" height=80>
+          </a>
+        </span>
+        <!--Search Bar-->
+        <span id="search">
+          <input type="text" placeholder="Search.." id="search_bar">
+        </span>
+        <!--Account & Shopping Cart-->
+        <span>
+          <a href="#account" class="fa fa-user" id="user_icon"></a>
+          <a href="#shoppingcart" class="fa fa-shopping-cart" id="cart_icon"></a>
+        </span>
+        
       </div>
       
       <!--Navigation Bar -->
       <div class="topnav">
-        <a href="#dogs">DOGS</a>
+        <a href="shop_dogs.html">DOGS</a>
         <a href="#cats">CATS</a>
         <a href="#all">SHOP ALL</a>
       </div>
@@ -31,65 +43,70 @@
       
       <!--Questionnaire -->
       <section>
-        <fieldset>
-          <h2>Enter your pet's info for a personalized experience!</h2>
+        
+        <fieldset class="question_form">
 
           <form>
-            <!--Dog or Cat -->
             <div>
-              <input type="radio" id="dog" name="Dog">
-              <label for="dog">Dog</label>
-              <span>or</span>
-              <input type="radio" id="cat" name="Cat">
-              <label for="cat">Cat</label>
+              <img src="img/homepage image.png" alt="cat and dog" id="catdog">
             </div>
-           
-           <br>
+            
+            <div class="questions">
+              <h2>Enter your pet's info for a personalized experience!</h2>
+              
+                <!--Dog or Cat -->
+                <input type="radio" id="dog" name="Dog">
+                <label for="dog">Dog</label>
+                <span>or</span>
+                <input type="radio" id="cat" name="Cat">
+                <label for="cat">Cat</label>
 
-            <!--Name -->
-            <div>
-              <label for="nameId">Name</label>
-              <br>
-              <input id="nameId" type="text" name="nameSubmitted" placeholder="Enter your pet's name">
-            </div>
-           
-            <br>
+                 <br>
+                 <br>
 
-            <!--Weight -->
-            <div class="select_box" style="width:200px;">
-              <label for="weight">Weight</label>
+                <!--Name -->
+                <label for="nameId">Name</label>
+                <br>
+                <input id="nameId" type="text" name="nameSubmitted" placeholder="Enter your pet's name">
+                <br>
+                <br>
+                <!--Weight -->
+                <label for="weight">Weight</label>
+                <br>
+                <select id="weight">
+                  <option value="0">Select</option>
+                  <option value="1">Under 10 lbs</option>
+                  <option value="2">10-30 lbs</option>
+                  <option value="3">30-50 lbs</option>
+                  <option value="4">Above 50 lbs</option>
+                </select>
+                <br>
+                <br>
+                <!--Favorite Color -->
+                <label for="favcolor">Favorite Color</label>
+                <br>
+                <select id="favcolor">
+                  <option value="0">Select</option>
+                  <option value="1">Blackberry</option>
+                  <option value="2">Strawberry</option>
+                  <option value="3">Crazyberry</option>
+                  <option value="4">Fire Orange</option>
+                </select>
+   
+              <!--Submit Button -->
               <br>
-              <select id="weight">
-                <option value="0">Select</option>
-                <option value="1">Under 10 lbs</option>
-                <option value="2">10-30 lbs</option>
-                <option value="3">30-50 lbs</option>
-                <option value="4">Above 50 lbs</option>
-              </select>
+              <input id="submit_button" type="submit" value="Submit">
             </div>
-          
-            <br>
-           
-            <!--Favorite Color -->
-            <div class="select_box" style="width:200px;">
-              <label for="favcolor">Favorite Color</label>
-              <br>
-              <select id="favcolor">
-                <option value="0">Select</option>
-                <option value="1">Blackberry</option>
-                <option value="2">Strawberry</option>
-                <option value="3">Crazyberry</option>
-                <option value="4">Fire Orange</option>
-              </select>
-            </div>
-
-            <br>
-            <input type="submit" value="Submit">
             
           </form>
           
+          <br>
+          <br>
+          <br>
           <!--Option for don't show -->
-          <input id='noshow' type="checkbox"> Don't show again
+          <span id='noshow'>
+            <input type="checkbox"> Don't show again
+          </span>
           
         </fieldset>
         
@@ -97,23 +114,26 @@
 
       <br>
       <!--Shop Cats -->
-      <section>
-        <input type="button" value="SHOP ALL CATS">
+      <section class="shop_cat">
+        <input type="button" value="SHOP ALL CATS" id="cat_button">
         <table class="table">
+          <col style="width:33.33%">
+          <col style="width:33.33%">
+          <col style="width:33.33%">
           <thead>
             <tr>
-              <td class="td"><img src="Img/cat collar.png" alt="cat collar" width=200></td>
-              <td class="td"><img src="Img/cat backpack.png" alt="cat backpack"></td>
-              <td class="td"><img src="Img/cat food.png" alt="cat food"></td>
+              <td class="td"><img src="Img/cat collar.png" alt="cat collar" width=300></td>
+              <td class="td"><img src="Img/cat backpack.png" alt="cat backpack" width=300></td>
+              <td class="td"><img src="Img/cat food.png" alt="cat food" width=300></td>
             </tr>
           </thead>
           
           <tbody>
             <!--Review Start -->
             <tr>
-              <td>"</td>
-              <td>"</td>
-              <td>"</td>
+              <td class="quote">"</td>
+              <td class="quote">"</td>
+              <td class="quote">"</td>
             </tr>
             <!--Review Content -->
             <tr>
@@ -123,9 +143,9 @@
             </tr>
             <!--Review User Name -->
             <tr>
-              <td>—Kat788</td>
-              <td>—Anonymous Customer</td>
-              <td>—Anonymous Customer</td>
+              <td class="customer">—Kat788</td>
+              <td class="customer">—Anonymous Customer</td>
+              <td class="customer">—Anonymous Customer</td>
             </tr>
             
           </tbody>
@@ -137,23 +157,26 @@
       
       <br>
       <!--Shop Dogs-->
-      <section>
-        <input type="button" value="SHOP ALL DOGS">
+      <section class="shop_dog">
+        <input type="button" value="SHOP ALL DOGS" id="dog_button">
         <table class="table">
+          <col style="width:33.33%">
+          <col style="width:33.33%">
+          <col style="width:33.33%">
           <thead>
             <tr>
-              <td class="td"><img src="https://images.unsplash.com/photo-1556229174-5e42a09e45af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=698&q=80" width=200></td>
-              <td class="td">Image2</td>
-              <td class="td">Image3</td>
+              <td class="td"><img src="Img/dog collar.png" alt="dog collar" width=300></td>
+              <td class="td"><img src="Img/dog backpack.png" alt="dog backpack" width=300></td>
+              <td class="td"><img src="Img/dog food.png" alt="dog food" width=300></td>
             </tr>
           </thead>
           
           <tbody>
             <!--Review Start -->
             <tr>
-              <td>"</td>
-              <td>"</td>
-              <td>"</td>
+              <td class="quote">"</td>
+              <td class="quote">"</td>
+              <td class="quote">"</td>
             </tr>
             <!--Review Content -->
             <tr>
@@ -163,9 +186,9 @@
             </tr>
             <!--Review User Name -->
             <tr>
-              <td>—Anonymous Customer</td>
-              <td>—Anonymous Customer</td>
-              <td>—Anonymous Customer</td>
+              <td class="customer">—Anonymous Customer</td>
+              <td class="customer">—Anonymous Customer</td>
+              <td class="customer">—Anonymous Customer</td>
             </tr>
             
           </tbody>
@@ -175,8 +198,12 @@
       </section>
       
       <br>
-      <!--Back To Top Button -->
-      <input type="button" value="BACK TO TOP">    
+      
+      <div id="backtop">
+        <!--Back To Top Button -->
+        <input type="button" value="BACK TO TOP" id="back_button">    
+      </div>
+      
 
     </main>
 
