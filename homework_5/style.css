@@ -182,7 +182,7 @@ td {
 }
 
 #cat_button, #dog_button {
-  margin-left: 12.3%;
+  margin-left: 14.8%;
 }
 
 table {
@@ -201,6 +201,7 @@ table {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 5%;
 }
 
 .round_button {
