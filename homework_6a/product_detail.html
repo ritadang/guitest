@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css?v=1"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="product_detail.js" defer></script>
+    <script src="update_cart.js" defer></script>
+    <title>All Dogs</title>
+  </head>
+
+  <body>
+    <header>
+      <!--Page Head and Title-->
+      <div class="head">
+        <!--Title Text & Icon-->
+        <span id="logo">
+          <a href="index.html"> 
+          <img src="img/logo.png" alt="store logo" height=80>
+          </a>
+        </span>
+        <!--Search Bar-->
+        <span id="search">
+          <input type="text" placeholder="Search..." id="search_bar">
+        </span>
+        <!--Account & Shopping Cart-->
+        <span>
+          <a href="#account" class="fa fa-user" id="user_icon"></a>
+          <a href="shopping_cart.html" class="fa fa-shopping-cart" id="cart_icon"> <span id="num_items"></span></a>
+        </span>
+        
+      </div>
+      
+      <!--Navigation Bar -->
+      <div class="topnav">
+        <a href="shop_dogs.html">DOGS</a>
+        <a href="#cats">CATS</a>
+        <a href="#all">SHOP ALL</a>
+      </div>
+      
+    </header>
+    
+    <main>
+      
+      <!--Navigations -->
+      <section>
+        
+        <!--Between Page Navigation Path --> 
+        <div class="navpath">
+          <a href="index.html">Home</a>
+          <span> > </span>
+          <a href="shop_dogs.html">Dogs</a>
+          <span> > </span>
+          <a href="product_detail.html">Waterproof Harness - Dog</a>
+        </div>
+      
+        
+      </section>
+
+      <!--Add to Shopping Cart Alert Message -->
+      <div class="cart_message">
+        <span class="helper"></span>
+        <div>
+            <div class="popupCloseButton">&times;</div>
+            <p>Item has been added to your cart!</p>
+        </div>
+      </div>
+
+      
+      <!--Product Detail -->
+      <section class=products>
+        <h2>Waterproof Harness - Dog</h2>
+
+        <!-- Horizontal product section container-->
+        <div class="product_detail">
+
+          <!-- Vertical container-->
+          <div class="img_and_descript">
+
+            <div class="product_img">
+              <img src="img/product_detail_black.png" alt="water proof harness" >
+            </div>
+
+            <div class="product_descript">
+              <h3>
+                Product Descriptions
+              </h3>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis diam consequat, ullamcorper sapien et, tempus lacus. Sed pharetra tortor vel sem tempus, eu sagittis massa venenatis. Morbi consectetur placerat libero vel auctor. Suspendisse sollicitudin dui sed mauris ullamcorper, sit amet posuere felis lacinia. 
+              </p>
+
+              <p>
+                Nam risus eros, porttitor sed urna eu, bibendum cursus elit. Praesent quis lectus urna. Maecenas sollicitudin diam eu tortor sagittis gravida.
+              </p>
+
+            </div>
+
+
+          </div>
+         
+
+          <!-- Vertical container-->
+          <div class="product_properties">
+            <div class="price">$16.99</div>
+            <!-- Select Size-->
+            <div class="size">
+              <label for="select_size">Size: <span id="size_selection">Please select</span></label>
+              <br>
+              <select id="select_size">
+                    <option value="0">Select</option>
+                    <option value="1">Tiny</option>
+                    <option value="2">Small</option>
+                    <option value="3">Medium</option>
+                    <option value="4">Large</option>
+                </select>
+            </div>
+            <!-- Select Color-->
+            <div class="color">
+              <label for="select_color">Color: <span id="color_selection">Blackberry</span></label>
+              <br>
+              <select id="select_color">
+                    <option value="0">Blackberry</option>
+                    <option value="1">Fire Orange</option>
+                    <option value="2">Strawberry</option>
+                </select>
+            </div>
+            <!-- Select Quantity & Add to Cart-->
+            <div>
+              <input type="number" value="1" min="1" max="999" id="spin_button">
+              <input type="button" value="Add to Cart" id="add_cart_button" onclick="update_cart();">
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+
+        
+
+
+      </section>
+
+      
+      
+    
+
+    </main>
+
+
+    <footer>
+      <hr>
+      <div class="footer_box">
+          <small> &copy; 2021 Muddy Paws Adventure Gear </small> 
+          <small> Terms and Use </small>
+          <small> Privacy Policy </small> 
+        
+      </div>
+      
+    </footer>
+
+
+  </body>
+
+
+</html>

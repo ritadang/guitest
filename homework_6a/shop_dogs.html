@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css?v=1"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="update_cart.js" defer></script>
+    <title>All Dogs</title>
+  </head>
+
+  <body>
+    <header>
+      <!--Page Head and Title-->
+      <div class="head">
+        <!--Title Text & Icon-->
+        <span id="logo">
+          <a href="index.html"> 
+            <img src="img/logo.png" alt="store logo" height=80>
+          </a>
+        </span>
+        <!--Search Bar-->
+        <span id="search">
+          <input type="text" placeholder="Search..." id="search_bar">
+        </span>
+        <!--Account & Shopping Cart-->
+        <span>
+          <a href="#account" class="fa fa-user" id="user_icon"></a>
+          <a href="shopping_cart.html" class="fa fa-shopping-cart" id="cart_icon"><span id="num_items"></span></a>
+        </span>
+        
+      </div>
+      
+      <!--Navigation Bar -->
+      <div class="topnav">
+        <a href="shop_dogs.html">DOGS</a>
+        <a href="#cats">CATS</a>
+        <a href="#all">SHOP ALL</a>
+      </div>
+      
+    </header>
+    
+    <main>
+      
+      <!--Navigations -->
+      <section>
+        <!--Within Page Navigation For Shopping Categories-->
+        <fieldset class="dog_category">
+          <div>
+              <img src="img/cute_dog.png" alt="cute dog pic" id="dog_pic">
+          </div>
+          <h2>Shop by Category</h2>
+          <div class="within_page_nav">
+            <input type=button class="round_button" value="Harness & Collar">
+            <input type=button class="round_button" value="Backpack & Carrier">
+            <input type=button class="round_button" value="Food & Water Storage">
+          </div>
+          
+        </fieldset>
+        
+        <!--Between Page Navigation Path --> 
+        <div class="navpath">
+          <a href="index.html">Home</a>
+          <span> > </span>
+          <a href="shop_dogs.html">Dogs</a>
+        </div>
+      
+        
+      </section>
+
+      
+      <!--Harness & Collar -->
+      <section class="products">
+        <h1>DOGS</h1>
+  
+        <h2>
+        Harness and Collar
+        </h2>
+        <p>
+        2 items in total
+        </p>
+
+        <!-- Horizontal product section container-->
+        <div class="dog_product">
+
+          <!-- Vertical individual product container-->
+          <div class="single_product">
+            <a href="product_detail.html">
+              <img src="img/harness1.png" alt="dog harness" >
+            </a>
+            
+            <div class="single_product_text">
+              <a href="product_detail.html" class="single_product_text">Waterproof Harness - Dog</a>
+            </div>
+            <div class="single_product_price">$16.99</div>
+          </div>
+
+          <!-- Vertical individual product container-->
+          <div class="single_product">
+            <img src="img/harness2.png" alt="dog harness" >
+            <div class="single_product_text">Dog GPS Tracker Collar</div>
+            <div class="single_product_price">$79.39</div>
+          </div>
+
+        </div>
+
+        
+       
+      </section>
+      
+      <br>
+      <!--Backpack & Carrrier-->
+      <section class="products">
+        <h2>
+        Backpack and Carrier
+        </h2>
+        
+        <p>
+        4 items in total
+        </p>
+        <!-- Horizontal product section container-->
+        <div class="dog_product">
+          <!-- Vertical individual product container-->
+          <div class="single_product">
+            <img src="img/backpack1.png" alt="dog backpack" >
+            <div class="single_product_text">Camping Carrier - Tiny Dog</div>
+            <div class="single_product_price">$34.99</div>
+          </div>
+          <!-- Vertical individual product container-->
+          <div class="single_product">
+            <img src="img/backpack2.png" alt="dog backpack" >
+            <div class="single_product_text">Tote Carrier - Dog</div>
+            <div class="single_product_price">$67.99</div>
+          </div>
+          <!-- Vertical individual product container-->
+          <div class="single_product">
+            <img src="img/backpack3.png" alt="dog backpack" >
+            <div class="single_product_text">"The trainer" Dog Backpack</div>
+            <div class="single_product_price">$44.69</div>
+          </div>
+
+        </div>
+
+        <!-- Horizontal product section container-->
+        <div class="dog_product">
+          <!-- Vertical individual product container-->
+          <div class="single_product">
+            <img src="img/backpack4.png" alt="dog backpack" >
+            <div class="single_product_text">Dog Backpack Carrier</div>
+            <div class="single_product_price">$45.00</div>
+          </div>
+
+        </div>
+
+
+      </section> 
+
+      <br>
+      <!--Food & Water Storage-->
+      <section class="products">
+        <h2>
+        Food and Water Storage
+        </h2>
+        
+        <p>
+        2 items in total
+        </p>
+
+        <!-- Horizontal product section container-->
+        <div class="dog_product">
+          <!-- Vertical individual product container-->
+          <div class="single_product">
+            <img src="img/storage1.png" alt="Water Storage Attachment to Harness" >
+            <div class="single_product_text">Water Storage Attachment to Harness</div>
+            <div class="single_product_price">$12.00</div>
+          </div>
+          <!-- Vertical individual product container-->
+          <div class="single_product">
+            <img src="img/storage2.png" alt="Dog Backpack Harness" >
+            <div class="single_product_text">Dog Backpack Harness</div>
+            <div class="single_product_price">$22.00</div>
+          </div>
+          
+
+        </div>
+
+      </section>
+      
+       <br>
+      <!--Back To Top Button -->
+      <div id="backtop">
+        <input type="button" value="BACK TO TOP" id="back_button">   
+      </div>
+
+
+    </main>
+
+
+    <footer>
+      <hr>
+      <div class="footer_box">
+          <small> &copy; 2021 Muddy Paws Adventure Gear </small> 
+          <small> Terms and Use </small>
+          <small> Privacy Policy </small> 
+        
+      </div>
+      
+    </footer>
+
+
+  </body>
+
+
+</html>

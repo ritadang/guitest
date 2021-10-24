@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css?v=1"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="update_cart.js" defer></script>
+    <title>Shopping Cart</title>
+  </head>
+
+  <body>
+    <header>
+      <!--Page Head and Title-->
+      <div class="head">
+        <!--Title Text & Icon-->
+        <span id="logo">
+          <a href="index.html"> 
+          <img src="img/logo.png" alt="store logo" height=80>
+          </a>
+        </span>
+        <!--Search Bar-->
+        <span id="search">
+          <input type="text" placeholder="Search..." id="search_bar">
+        </span>
+        <!--Account & Shopping Cart-->
+        <span>
+          <a href="#account" class="fa fa-user" id="user_icon"></a>
+          <a href="shopping_cart.html" class="fa fa-shopping-cart" id="cart_icon"> <span id="num_items"></span></a>
+        </span>
+        
+      </div>
+      
+      <!--Navigation Bar -->
+      <div class="topnav">
+        <a href="shop_dogs.html">DOGS</a>
+        <a href="#cats">CATS</a>
+        <a href="#all">SHOP ALL</a>
+      </div>
+      
+    </header>
+    
+    <main>
+      
+      <!--Empty Shopping Cart State -->
+      <div class="empty_cart">
+            <h1>Your Cart Is Empty</h1>
+            <p>Returning Customer?</p>
+            <input type="button" value="Sign In" id="sign_in_button">
+            <br>
+            <br>
+            <a href="shop_dogs.html">Continue Shopping</a>
+      </div>
+      
+        
+      <!--Filled Shopping Cart State -->
+      <div class="filled_cart">
+        
+        <!-- Horinzontal flex box container-->
+        <div class="cart_container">
+
+            <!-- Vertical flex box container-->
+            <div class="item_container">
+                <div class="item_container_title">
+                  <h1>Your Cart <span id="cart_num"> (1 item) </span></h1>
+                </div>
+                
+                <!-- Details of Cart Item-->
+                <div class="cart_item" id="product_template">
+
+                  <!--Item Image-->
+                  <div class="item_img">
+                    <img src="img/cart_black.png" alt="cart item image">
+                  </div>
+                  
+                  <!--Item Info-->
+                  <div class="item_info">
+                    <div class="item_name"><a href="product_detail.html">Waterproof Harness - Dog</a></div>
+                    <div class="item_ship">Eligible for 2-Day Shipping</div>
+                    <div class="item_size">Size: <span id="selected_size">Tiny</span></div>
+                    <div class="item_color">Color: <span id="selected_color">Blackberry</span></div>
+                    <div class ="item_qty">Qty: <input type="number" value="1" min="1" max="999" id="cart_spin_button"></div>
+                  </div>
+
+                  <!--Other Item Info-->
+                  <div class="item_other">
+                    <div class="item_price">$16.99</div>
+                    <div class="remove_item"> <input type="button" value="Remove" id="remove_button"> </div>
+                  </div>
+                  
+                </div>
+
+            </div>
+
+            <!-- Vertical flex box container-->
+            <div class="summary_container">
+                
+                <div class="summary_title">
+                  <h1>Order Summary</h1>
+                </div>
+
+
+                <!-- Horizontal flex box container-->
+                <div class="subtotal">
+                  <span>Subtotal: </span>
+                  <span id="selected_subtotal">$16.99</span>
+
+                </div>
+
+                <!-- Horizontal flex box container-->
+                <div class="shipping">
+                  <span>Estimated Shipping: </span>
+                  <span id="selected_shipping">$8.00</span>
+                </div>
+
+                <!-- Horizontal flex box container-->
+                <div class="total_money">
+                  <span>Total Before Tax: </span>
+                  <span id="selected_total">$24.99</span>
+                </div>
+
+                <!-- Horizontal flex box container-->
+                <div class="checkout">
+                  <!-- Checkout Button-->
+                  <input type="button" value="Proceed to Checkout" id="checkout_button">
+                </div>
+
+
+            </div>
+
+
+        </div>
+      
+    
+      </div>
+
+      
+      <!--Continue Shopping -->
+      <section class="top_sellers">
+        <h2>
+        Top 3 Sellers Of The Week
+        </h2>
+
+        <!-- Horizontal flex box container-->
+        <div class="dog_product">
+          <!-- Vertical individual product container-->
+          <div class="single_product">
+            <a href="product_detail.html">
+              <img src="img/harness1.png" alt="dog harness" >
+            </a>
+            <a href="product_detail.html" class="single_product_text">Waterproof Harness - Dog</a>
+            <div class="single_product_price">$16.99</div>
+          </div>
+
+          <!-- Vertical individual product container-->
+          <div class="single_product">
+            <img src="img/cat_gps_tracker.png" alt="Cat GPS Tracker Collar" >
+            <div class="single_product_text">Cat GPS Tracker Collar</div>
+            <div class="single_product_price">$79.39</div>
+          </div>
+
+          <!-- Vertical individual product container-->
+          <div class="single_product">
+            <img src="img/storage2.png" alt="Dog Backpack Harness" >
+            <div class="single_product_text">Dog Backpack Harness</div>
+            <div class="single_product_price">$22.00</div>
+          </div>
+          
+
+        </div>
+
+        <!-- Continue Shopping Button-->
+        <div class="continue_shop">
+          <input type="button" value="Continue Shopping" id="continue_shop_button">
+        </div>
+        
+
+      </section>
+
+      
+      
+    
+
+    </main>
+
+
+    <footer>
+      <hr>
+      <div class="footer_box">
+          <small> &copy; 2021 Muddy Paws Adventure Gear </small> 
+          <small> Terms and Use </small>
+          <small> Privacy Policy </small> 
+        
+      </div>
+      
+    </footer>
+
+
+  </body>
+
+
+</html>
