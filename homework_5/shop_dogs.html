@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css?v=1"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="update_cart.js" defer></script>
     <title>All Dogs</title>
   </head>
 
@@ -20,12 +21,12 @@
         </span>
         <!--Search Bar-->
         <span id="search">
-          <input type="text" placeholder="Search.." id="search_bar">
+          <input type="text" placeholder="Search..." id="search_bar">
         </span>
         <!--Account & Shopping Cart-->
         <span>
           <a href="#account" class="fa fa-user" id="user_icon"></a>
-          <a href="#shoppingcart" class="fa fa-shopping-cart" id="cart_icon"></a>
+          <a href="shopping_cart.html" class="fa fa-shopping-cart" id="cart_icon"><span id="num_items"></span></a>
         </span>
         
       </div>
@@ -89,7 +90,7 @@
             </a>
             
             <div class="single_product_text">
-              <a href="product_detail.html">Waterproof Harness - Dog</a>
+              <a href="product_detail.html" class="single_product_text">Waterproof Harness - Dog</a>
             </div>
             <div class="single_product_price">$16.99</div>
           </div>

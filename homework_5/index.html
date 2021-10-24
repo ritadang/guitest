@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css?v=1"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="update_cart.js" defer></script>
     <title>Muddy Paws</title>
   </head>
 
@@ -20,12 +21,12 @@
         </span>
         <!--Search Bar-->
         <span id="search">
-          <input type="text" placeholder="Search.." id="search_bar">
+          <input type="text" placeholder="Search..." id="search_bar">
         </span>
         <!--Account & Shopping Cart-->
         <span>
           <a href="#account" class="fa fa-user" id="user_icon"></a>
-          <a href="#shoppingcart" class="fa fa-shopping-cart" id="cart_icon"></a>
+          <a href="shopping_cart.html" class="fa fa-shopping-cart" id="cart_icon"><span id="num_items"></span></a>
         </span>
         
       </div>
@@ -55,10 +56,10 @@
               <h2>Enter your pet's info for a personalized experience!</h2>
               
                 <!--Dog or Cat -->
-                <input type="radio" id="dog" name="Dog">
+                <input type="radio" id="dog" name="pet_type">
                 <label for="dog">Dog</label>
                 <span>or</span>
-                <input type="radio" id="cat" name="Cat">
+                <input type="radio" id="cat" name="pet_type">
                 <label for="cat">Cat</label>
 
                  <br>
