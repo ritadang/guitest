@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css?v=1"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="update_cart.js" defer></script>
+    <title>Muddy Paws</title>
+  </head>
+
+  <body>
+    <header>
+      <!--Page Head and Title-->
+      <div class="head">
+        <!--Title Text & Icon-->
+        <span id="logo">
+          <a href="index.html"> 
+          <img src="img/logo.png" alt="store logo" height=80>
+          </a>
+        </span>
+        <!--Search Bar-->
+        <span id="search">
+          <input type="text" placeholder="Search..." id="search_bar">
+        </span>
+        <!--Account & Shopping Cart-->
+        <span>
+          <a href="#account" class="fa fa-user" id="user_icon"></a>
+          <a href="shopping_cart.html" class="fa fa-shopping-cart" id="cart_icon"><span id="num_items"></span></a>
+        </span>
+        
+      </div>
+      
+      <!--Navigation Bar -->
+      <div class="topnav">
+        <a href="shop_dogs.html">DOGS</a>
+        <a href="#cats">CATS</a>
+        <a href="#all">SHOP ALL</a>
+      </div>
+      
+    </header>
+    
+    <main>
+      
+      <!--Questionnaire -->
+      <section>
+        
+        <fieldset class="question_form">
+
+          <form>
+            <div>
+              <img src="img/homepage_image.png" alt="cat and dog" id="catdog">
+            </div>
+            
+            <div class="questions">
+              <h2>Enter your pet's info for a personalized experience!</h2>
+              
+                <!--Dog or Cat -->
+                <input type="radio" id="dog" name="pet_type">
+                <label for="dog">Dog</label>
+                <span>or</span>
+                <input type="radio" id="cat" name="pet_type">
+                <label for="cat">Cat</label>
+
+                 <br>
+                 <br>
+
+                <!--Name -->
+                <label for="nameId">Name</label>
+                <br>
+                <input id="nameId" type="text" name="nameSubmitted" placeholder="Enter your pet's name">
+                <br>
+                <br>
+                <!--Weight -->
+                <label for="weight">Weight
+                  <i class="fa fa-info-circle" id="info_icon"></i>
+                </label>
+                <br>
+                <select id="weight">
+                    <option value="0">Select</option>
+                    <option value="1">Under 10 lbs</option>
+                    <option value="2">10-30 lbs</option>
+                    <option value="3">30-50 lbs</option>
+                    <option value="4">Above 50 lbs</option>
+                </select>
+          
+                <br>
+                <br>
+                <!--Favorite Color -->
+                <label for="favcolor">Favorite Color</label>
+                <br>
+                <select id="favcolor">
+                  <option value="0">Select</option>
+                  <option value="1">Blackberry</option>
+                  <option value="2">Strawberry</option>
+                  <option value="3">Crazyberry</option>
+                  <option value="4">Fire Orange</option>
+                </select>
+   
+              <!--Submit Button -->
+              <br>
+              <input id="submit_button" type="submit" value="Submit">
+            </div>
+            
+          </form>
+          
+          <br>
+          <br>
+          <br>
+          <!--Option for don't show -->
+          <span id='noshow'>
+            <input type="checkbox"> Don't show again
+          </span>
+          
+        </fieldset>
+        
+      </section>
+
+      <br>
+      <!--Shop Cats -->
+      <section class="shop_cat">
+        <input type="button" value="SHOP ALL CATS" id="cat_button">
+        <table class="table">
+          <col style="width:33.33%">
+          <col style="width:33.33%">
+          <col style="width:33.33%">
+          <thead>
+            <tr>
+              <td class="td"><img src="img/cat_collar.png" alt="cat collar" width=300></td>
+              <td class="td"><img src="img/cat_backpack.png" alt="cat backpack" width=300></td>
+              <td class="td"><img src="img/cat_food.png" alt="cat food" width=300></td>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <!--Review Start -->
+            <tr>
+              <td class="quote">"</td>
+              <td class="quote">"</td>
+              <td class="quote">"</td>
+            </tr>
+            <!--Review Content -->
+            <tr>
+              <td>My cat loved it!</td>
+              <td>All time favorite!</td>
+              <td>All time favorite!</td>
+            </tr>
+            <!--Review User Name -->
+            <tr>
+              <td class="customer">— Kat788</td>
+              <td class="customer">— Anonymous Customer</td>
+              <td class="customer">— Anonymous Customer</td>
+            </tr>
+            
+          </tbody>
+          
+        </table>
+        
+
+      </section>
+      
+      <br>
+      <!--Shop Dogs-->
+      <section class="shop_dog">
+        <input type="button" value="SHOP ALL DOGS" id="dog_button">
+        <table class="table">
+          <col style="width:33.33%">
+          <col style="width:33.33%">
+          <col style="width:33.33%">
+          <thead>
+            <tr>
+              <td class="td"><img src="img/dog_collar.png" alt="dog collar" width=300></td>
+              <td class="td"><img src="img/dog_backpack.png" alt="dog backpack" width=300></td>
+              <td class="td"><img src="img/dog_food.png" alt="dog food" width=300></td>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <!--Review Start -->
+            <tr>
+              <td class="quote">"</td>
+              <td class="quote">"</td>
+              <td class="quote">"</td>
+            </tr>
+            <!--Review Content -->
+            <tr>
+              <td>My dog loved it!</td>
+              <td>All time favorite!</td>
+              <td>All time favorite!</td>
+            </tr>
+            <!--Review User Name -->
+            <tr>
+              <td class="customer">— Anonymous Customer</td>
+              <td class="customer">— Anonymous Customer</td>
+              <td class="customer">— Anonymous Customer</td>
+            </tr>
+            
+          </tbody>
+          
+        </table>
+
+      </section>
+      
+      <br>
+      
+      <div id="backtop">
+        <!--Back To Top Button -->
+        <input type="button" value="BACK TO TOP" id="back_button">    
+      </div>
+      
+
+    </main>
+
+
+    <footer>
+      <hr>
+      <div class="footer_box">
+          <small> &copy; 2021 Muddy Paws Adventure Gear </small> 
+          <small> Terms and Use </small>
+          <small> Privacy Policy </small> 
+        
+      </div>
+    </footer>
+
+
+  </body>
+
+
+</html>
