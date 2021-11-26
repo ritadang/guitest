@@ -1,0 +1,218 @@
+/* bounce in animation */
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+/* Style the baseline document look */
+html body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+    height: 100%;
+    min-height: 100%;
+}
+
+/* Style the footer */
+
+footer {
+    padding-left: 52px;
+    padding-bottom: 10px;
+    font-family: 'Noto Serif', serif;
+}
+
+
+/* Style the map section */
+.map_title {
+    padding-top: 46px;
+    padding-bottom: 26px;
+    animation: bounceIn 2s;
+    animation-duration: 2s;
+}
+
+
+#suggestions {
+    color: #402009;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 4.8vmin;
+}
+
+.container-fluid.mymap {
+    padding-right: 6%;
+    padding-left: 6%;
+    padding-bottom: 20px;
+}
+
+.mapael .map {
+    position: relative;
+}
+
+.mapael .mapTooltip {
+    position: absolute;
+    background-color: #474c4b;
+    moz-opacity: 0.70;
+    opacity: 0.70;
+    filter: alpha(opacity=70);
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1000;
+    max-width: 200px;
+    display: none;
+    color: #fff;
+}
+
+/* Style the recommendations section */
+.container-fluid.recommendations {
+    padding-top: 6vmax;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+}
+
+.container-fluid.recommendations.beijing {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.container-fluid.recommendations.pittsburgh {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.container-fluid.recommendations.chengdu {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.container-fluid.recommendations.dali {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.container-fluid.recommendations.tokyo {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.container-fluid.recommendations.chicago {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.container-fluid.recommendations.iowa {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.container-fluid.recommendations.la {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+
+.place_title {
+    color: #402009;
+    font-family: 'Source Code Pro', monospace;
+    padding-bottom: 20px;
+}
+
+/* Style the recommendations card */
+.container-fluid.card-template {
+    padding-bottom: 32px;
+}
+
+.row.row_container {
+    background: #FAFCFD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 8px 16px rgba(50, 50, 71, 0.06);
+    border-radius: 45px;
+    
+}
+
+.col-5.img_container {
+    padding: 4%;
+}
+
+/* Style the recommendations texts */
+.col-7.texts-container {
+    font-family: 'Noto Serif', serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 4%;
+}
+
+.row.date {
+    padding-bottom: 15px;
+    font-size: 1.3vmax;
+}
+
+.row.name h4 {
+    font-weight: 700;
+    font-size: 2.8vmax;
+
+}
+
+.row.address {
+    font-size: 1.4vmax;
+}
+
+.row.tag {
+    color: #605543;
+    font-weight: 600;
+    padding-top: 4.3vmin;
+    padding-bottom: 4.3vmin;
+    font-size: 1.6vmax;
+}
+
+.row.line1, .row.line2, .row.line3 {
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.4vmax;
+}
+
+.row.line1 span {
+    font-weight: normal;
+}
+
+.row.line2 span {
+    font-weight: normal;
+}
+
+.row.line3 span {
+    font-weight: normal;
+}
+
+.row.line2 img, .row.line3 img {
+    width: 10%;
+}
+
+.row.tag img {
+    width: 7%;
+}
+
+
+/* Style Back To Top Button*/
+#back_button {
+    display: none;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    background-color: #605543;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.container-fluid.back {
+    padding-bottom: 60px;
+}
+
+
+

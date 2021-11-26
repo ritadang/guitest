@@ -1,0 +1,2640 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Coffee Shop Guide</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/style.css?v=1"> 
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Source+Code+Pro:wght@600;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- jQuery-Mapael -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mapael/2.2.0/js/jquery.mapael.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-mapael@2.2.0/js/jquery.mapael.min.js"></script>
+        <script src="assets/js/world_countries.js" charset="utf-8" defer></script>
+        <script src="assets/js/coffee_map.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- BANNER IMAGE & PAGE TITLE -->
+            <img src="assets/img/banner.png" class="img-fluid banner_pic" alt="Coffee Shop Guide Banner">
+        </header>
+
+        <main>
+            <!-- INTERACTIVE MAP TITLE -->
+            <div class="container-fluid" id="world_map">
+                <div class="row justify-content-center align-items-end g-0 map_title">
+                    <div class="col-2 text-end">
+                        <img src="assets/img/location_pin.svg" class="img-fluid" alt="coffee bean location pin icon">
+                    </div>
+
+                    <div class="col-8 text-start">
+                        <h2 id="suggestions">Get Coffee Shop Inspirations At...</h2>
+                    </div>
+                </div>
+                  
+            </div>
+
+            <!-- INTERACTIVE MAP -->
+            <div class="container-fluid mymap">
+                <div class="map">World Map With Cities Marked For Getting Coffee Shop Suggestions</div>
+                  
+            </div>
+
+            <!-- RECOMMENDATIONS CARDS FOR BEIJING -->
+            <div class="container-fluid recommendations beijing" id="beijing">
+                <!-- place heading -->
+                <h1 class="place_title">
+                    Beijing | China
+                </h1>
+
+                <!-- cafe 1 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/yuanben.png" class="img-fluid" alt="cafe yuanben">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>6.8.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Original Coffee</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    中关村南二条2号
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Study
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>fast enough to support vpn</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>sufficient</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>70% of tables were taken on weekends</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>coffee/bar design, sketchy bathroom</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!-- cafe 2 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/0.1g.png" class="img-fluid" alt="cafe 0.1g">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>6.2.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>0.1g Coffee</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    朗园VINTAGE南门3号楼1层
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Study
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>fast enough for watching videos</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>some available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>quite slow on weekdays</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>inside a shared workspace</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!-- cafe 3 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/cabo.png" class="img-fluid" alt="cafe cabo">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>5.31.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Cabo Coffee</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    北京街13号
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>fast enough for watching videos</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>very busy all day, small work space</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>chic, tropical desert theme</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!-- cafe 4 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/fusen.png" class="img-fluid" alt="cafe fu3">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>5.27.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>FU3</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    西兴隆街130号
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Study
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>fast enough for watching videos</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>sufficient</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>not busy on weekdays</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>has a cute rooftop</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!-- cafe 5 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/catail.png" class="img-fluid" alt="cafe catail">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>5.3.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Catail Cafe</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    果子胡同60号
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>fast enough for watching videos</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>many available at each table</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>pretty busy all the time</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>two levels, coffee shop during the day, bar at night</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!-- cafe 6 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/ty_cafe.png" class="img-fluid" alt="cafe ty space">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>4.30.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Ty Cafe & Space</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    柏林胡同
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>not sure</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>none</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>many people came here to take pictures</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>cute rooftop, nice seatings outside</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!-- cafe 7 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/naive.png" class="img-fluid" alt="cafe naive">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>4.13.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Naive</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    建国路朗园2号楼1层
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Study
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>fast enough for watching videos</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>many available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>large work space</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>modern, white, nice lighting</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!-- cafe 8 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/camera_stylo.png" class="img-fluid" alt="cafe camera stylo">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>3.13.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Camera Stylo Cafe</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    东四十一条64号
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>not sure</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>not busy at all on weekdays</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>old fashioned theater theme</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!-- cafe 9 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/baristar.png" class="img-fluid" alt="cafe baristar">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>2.15.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Baristar</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    三里屯北街81号那里花园1层院内
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>no free wifi avaliable</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>a few</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>not busy on weekdays</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>has large, tall windows</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <!-- cafe 10 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/zspace.png" class="img-fluid" alt="cafe zspace">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>1.28.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Zspace</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    协作胡同40号
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Study
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>fast enough for watching videos</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>many available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>moderately busy on weekdays, better in late afternoons</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>has a beautiful courtyard, nice view during the fall</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+
+                <!-- cafe 11 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/one_quarter.png" class="img-fluid" alt="cafe one quarter">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>1.25.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>One Quarter Cafe</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    东四六条胡同85号
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>not sure</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>pretty crowded since the cafe is tiny</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>minimalist</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!-- cafe 12 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/soap.png" class="img-fluid" alt="cafe soap">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>1.23.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Soap Cafe</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    酒仙桥路南十里居48号院
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>not sure</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>very busy all day</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>white, modern</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+
+                <!-- cafe 13 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/berry_beans.png" class="img-fluid" alt="cafe berry beans">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>12.28.2020</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Berry Beans</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    朱家胡同7号
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>not sure</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>very popular place for photo shooting</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>minimalist, has a tiny courtyard and a rooftop</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!-- cafe 14 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/casolife.png" class="img-fluid" alt="cafe casolife">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>12.13.2020</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>CASOlife Cafe</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    洋桥12号院北京金源酒店大堂西侧
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Study
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>fast enough for watching videos</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>many available at each table</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>not busy on both weekdays and weekends</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>british study room style</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!-- cafe 15 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/alba.png" class="img-fluid" alt="cafe alba">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>11.22.2020</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Alba</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    鼓楼东大街70号
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>fast enough for watching videos</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>less busy after brunch time</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>retro style</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!-- cafe 16 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/metal_hands.png" class="img-fluid" alt="cafe metal hands">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>11.10.2020</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Metal Hands</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    西打磨厂街228号
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>not always steady</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>not busy on weekdays</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>retro style</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!-- cafe 17 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/big_small.png" class="img-fluid" alt="cafe bigSmall">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>8.29.2020</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>BigSmall Coffee</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    西兴隆街60号
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>no free wifi available</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>not busy on weekdays</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>youthful, cafe and airbnb combined</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <!-- cafe 18 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/soloist.png" class="img-fluid" alt="cafe soloist">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>8.29.2020</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Soloist</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    杨梅树斜街39号
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>not sure</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>not busy on weekdays</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>retro style, cute rooftop</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                  
+                  
+            </div>
+
+
+             <!-- RECOMMENDATIONS CARDS FOR PITSSBURGH -->
+             <div class="container-fluid recommendations pittsburgh" id="pittsburgh">
+                <!-- place heading -->
+                <h1 class="place_title">
+                    Pittsburgh, PA | USA
+                </h1>
+
+                <!-- cafe 1 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/commonplace.png" class="img-fluid" alt="cafe commonplace">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>10.23.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Commonplace Coffee</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    Squirrel Hill | 5827 Forbes Ave
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>not super steady</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>less busy in the afternoon</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>chic</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+
+                <!-- cafe 2 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/defer.png" class="img-fluid" alt="De Fer Coffee and Tea">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>10.1.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>De Fer Coffee and Tea</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    Strip District | 2002 Smallman St
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Study
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>fast enough for watching videos</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>only on one side</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>less busy on weekdays</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>remodeled from a garage</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+
+                
+                  
+            </div>
+
+            
+
+            <!-- RECOMMENDATIONS CARDS FOR CHENGDU -->
+            <div class="container-fluid recommendations chengdu" id="chengdu">
+                <!-- place heading -->
+                <h1 class="place_title">
+                    Chengdu | China
+                </h1>
+
+                <!-- cafe 1 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/ginko.png" class="img-fluid" alt="cafe ginko">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>11.26.2020</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Ginko银子</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    青龙巷21号附17号
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>not super steady</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>less busy in the afternoon</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>japanese tea house/bakery style</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+
+                <!-- cafe 2 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/enter.png" class="img-fluid" alt="Cafe enter">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>11.25.2020</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Enter.</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    汪家拐街道金河路81号附1号
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>not sure</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>moderately busy, pretty small space</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>youthful, modern</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+
+                
+                  
+            </div>
+
+
+            <!-- RECOMMENDATIONS CARDS FOR DALI -->
+            <div class="container-fluid recommendations dali" id="dali">
+                <!-- place heading -->
+                <h1 class="place_title">
+                    Dali | China
+                </h1>
+
+                <!-- cafe 1 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/pessoa.png" class="img-fluid" alt="cafe pessoa">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>3.26.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Pessoa Coffee</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    喜洲镇大界巷37号转角楼旁
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>fast enough for watching videos</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>busy during tourist season</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>half open door, nice view of the rape flower field</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+
+                <!-- cafe 2 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/wuchuan.png" class="img-fluid" alt="Cafe Wuchuan">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>3.25.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>无川咖啡馆</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    喜林苑酒店旁300米
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>not sure</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>none</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>busy during tourist season</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>half open door, nice view of the rape flower field</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+
+                
+                  
+            </div>
+
+            <!-- RECOMMENDATIONS CARDS FOR PITSSBURGH -->
+            <div class="container-fluid recommendations tokyo" id="tokyo">
+                <!-- place heading -->
+                <h1 class="place_title">
+                    Tokyo | Japan
+                </h1>
+
+                <!-- cafe 1 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/bills.png" class="img-fluid" alt="cafe bills">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>9.19.2019</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Bills</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    1-1-1 Weekend House Alley 2F
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>not sure</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>none</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>busy all the time</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>nice view of the sea</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+                
+                  
+            </div>
+
+            
+
+            <!-- RECOMMENDATIONS CARDS FOR CHICAGO -->
+            <div class="container-fluid recommendations chicago" id="chicago">
+                <!-- place heading -->
+                <h1 class="place_title">
+                    Chicago, IL | USA
+                </h1>
+
+                <!-- cafe 1 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/blue_bottle_ch.png" class="img-fluid" alt="cafe blue bottle in Chicago downtown">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>8.22.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Blue Bottle Coffee</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    Downtown | 313 W Wolf Point Plaza Ste 120
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>fast enough for watching videos</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>some available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>less busy in late morning</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>nice street and lake view, chic</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+                
+                  
+            </div>
+
+
+            <!-- RECOMMENDATIONS CARDS FOR IOWA -->
+            <div class="container-fluid recommendations iowa" id="iowa">
+                <!-- place heading -->
+                <h1 class="place_title">
+                    Iowa City, IA | USA
+                </h1>
+
+                <!-- cafe 1 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/java.png" class="img-fluid" alt="cafe java house">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>5.10.2017</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Java House</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    Downtown | 211 1/2 E Washington St
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Study
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>fast enough for watching videos</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>many available at each table</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>less busy at night</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>retro style, wooden</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+                
+                  
+            </div>
+
+            <!-- RECOMMENDATIONS CARDS FOR LOS ANGELES -->
+            <div class="container-fluid recommendations la" id="la">
+                <!-- place heading -->
+                <h1 class="place_title">
+                    Los Angeles, CA | USA
+                </h1>
+
+                <!-- cafe 1 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/blue_bottle_la.png" class="img-fluid" alt="cafe blue bottle at Venice Beach, Los Angeles">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>6.17.2021</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Blue Bottle Coffee</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    Venice | 1103 Abbot Kinney Blvd
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>not sure</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>none</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>not busy in general</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>only has a few seatings outside</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+
+                <!-- cafe 2 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/alfred.png" class="img-fluid" alt="alfred tea room">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>2.17.2020</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Alfred Tea Room</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    Brentwood | 11908 San Vicente Blvd
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>sometimes unstable</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>less busy in the afternoon</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>pink, chic</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+
+                <!-- cafe 3 -->
+                <div class="container-fluid card-template">
+                    <div class="row row_container">
+                        <div class="col-5 img_container">
+                            <img src="assets/img/chitchat.png" class="img-fluid" alt="cafe chitchat">
+                        </div>
+    
+                        <div class="col-7 texts-container">
+                            <div class="row date">
+                                <div class="col-12 text-end">
+                                    Visit Date: <i>11.17.2019</i>
+                                </div>
+                            </div>
+    
+                            <div class="row name">
+                                <div class="col-12">
+                                    <h4>Chitchat Coffee + Matcha</h4>
+                                </div>
+                            </div>
+    
+                            <div class="row address">
+                                <div class="col-12">
+                                    Sawtelle | 1854 Sawtelle Blvd
+                                </div>
+                            </div>
+    
+                            <div class="row tag">
+                                <div class="col-12">
+                                    <img src="assets/img/award.svg" class="img-fluid" alt="award icon">
+                                    Ideal for Rendezvous
+                                </div>
+                            </div>
+    
+                            <div class="row line1">
+                                <div class="col-6 wifi">
+                                    <div>Wifi Service: <span>not super steady</span></div> 
+                                </div>
+    
+                                <div class="col-6 power">
+                                    <div>Power Outlets: <span>few available</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line2">
+                                <div class="col-6 noise">
+                                    <div>Noise Level:
+                                        <br>
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/full_volume.svg" class="img-fluid" alt="full volume icon">
+                                        <img src="assets/img/empty_volume.svg" class="img-fluid" alt="empty volume icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 crowd">
+                                    <div>Busy Level: <span>less busy in the afternoon</span></div> 
+                                </div>
+                            </div>
+    
+                            <div class="row line3">
+                                <div class="col-6 food">
+                                    <div>Food: 
+                                        <br>
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/full_star.svg" class="img-fluid" alt="full star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                        <img src="assets/img/empty_star.svg" class="img-fluid" alt="empty star icon">
+                                    </div> 
+                                </div>
+    
+                                <div class="col-6 interior">
+                                    <div>Interior Design: <span>minimalist, has seatings both inside and outside</span></div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+                
+                  
+            </div>
+
+            
+            <!-- Back To Top -->
+            <div class="container-fluid back">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <!--Back To Top Button -->
+                        <input type="button" value="BACK TO TOP" id="back_button" onclick="back_to_map();">    
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </main>
+
+        <div class="footer_box">
+            <hr>
+            <footer>
+                <small> &copy; 2021 Rita Dang </small> 
+            </footer>
+        </div>
+        
+
+        
+        <!-- Bootstrap JS Bundle with Popper -->
+        <!-- Including JS files at the bottom to improve the performance of your web pages -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
