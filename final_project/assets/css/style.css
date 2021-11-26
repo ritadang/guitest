@@ -14,20 +14,32 @@
   }
 
 /* Style the baseline document look */
-html body {
+html, body {
+    height: 100%;
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Source Code Pro', monospace;
-    height: 100%;
+}
+
+main {
     min-height: 100%;
 }
 
 /* Style the footer */
 
+.footer_box {
+    height: 40px;
+    margin-top: -40px;
+    font-family: 'Noto Serif', serif;
+    padding-top: 20px;
+}
+
 footer {
     padding-left: 52px;
-    padding-bottom: 10px;
-    font-family: 'Noto Serif', serif;
+    padding-bottom: 15px;
 }
 
 
@@ -75,7 +87,7 @@ footer {
     padding-top: 6vmax;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .container-fluid.recommendations.beijing {
