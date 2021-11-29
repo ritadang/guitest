@@ -50,6 +50,7 @@ $(".container-fluid.mymap").mapael({
             tooltip: {content: "<span style=\"font-weight:bold;\">Country :</span> Japan"},
             eventHandlers: {
                 click: function () {
+                    // display recommendation only for the selected area 
                     $(".container-fluid.recommendations.beijing").css({display: 'none'});
                     $(".container-fluid.recommendations.pittsburgh").css({display: 'none'});
                     $(".container-fluid.recommendations.iowa").css({display: 'none'});
@@ -59,6 +60,7 @@ $(".container-fluid.mymap").mapael({
                     $(".container-fluid.recommendations.dali").css({display: 'none'});
                     $(".container-fluid.recommendations.tokyo").css({display: 'revert'});
                     $("#back_button").css({display: 'revert'});
+                    // automatically scrolls down the page
                     window.location.href="#tokyo";
                 }
             }
@@ -82,6 +84,7 @@ $(".container-fluid.mymap").mapael({
                     $(".container-fluid.recommendations.dali").css({display: 'none'});
                     $(".container-fluid.recommendations.tokyo").css({display: 'none'});
                     $("#back_button").css({display: 'revert'});
+                    // automatically scrolls down the page
                     window.location.href="#pittsburgh";
                 }
             }
@@ -105,6 +108,7 @@ $(".container-fluid.mymap").mapael({
                     $(".container-fluid.recommendations.dali").css({display: 'revert'});
                     $(".container-fluid.recommendations.tokyo").css({display: 'none'});
                     $("#back_button").css({display: 'revert'});
+                    // automatically scrolls down the page
                     window.location.href="#beijing";
                 }
             }
@@ -143,6 +147,7 @@ $(".container-fluid.mymap").mapael({
                     $(".container-fluid.recommendations.dali").css({display: 'none'});
                     $(".container-fluid.recommendations.tokyo").css({display: 'none'});
                     $("#back_button").css({display: 'revert'});
+                    // automatically scrolls down the page
                     window.location.href="#iowa";
                 }
             }
@@ -174,6 +179,7 @@ $(".container-fluid.mymap").mapael({
                     $(".container-fluid.recommendations.dali").css({display: 'none'});
                     $(".container-fluid.recommendations.tokyo").css({display: 'none'});
                     $("#back_button").css({display: 'revert'});
+                    // automatically scrolls down the page
                     window.location.href="#la";
                 }
             }
@@ -205,6 +211,7 @@ $(".container-fluid.mymap").mapael({
                     $(".container-fluid.recommendations.dali").css({display: 'none'});
                     $(".container-fluid.recommendations.tokyo").css({display: 'none'});
                     $("#back_button").css({display: 'revert'});
+                    // automatically scrolls down the page
                     window.location.href="#pittsburgh";
                 }
             }
@@ -236,6 +243,7 @@ $(".container-fluid.mymap").mapael({
                     $(".container-fluid.recommendations.dali").css({display: 'none'});
                     $(".container-fluid.recommendations.tokyo").css({display: 'none'});
                     $("#back_button").css({display: 'revert'});
+                    // automatically scrolls down the page
                     window.location.href="#chicago";
                 }
             }
@@ -267,6 +275,7 @@ $(".container-fluid.mymap").mapael({
                     $(".container-fluid.recommendations.dali").css({display: 'none'});
                     $(".container-fluid.recommendations.tokyo").css({display: 'revert'});
                     $("#back_button").css({display: 'revert'});
+                    // automatically scrolls down the page
                     window.location.href="#tokyo";
                 }
             }
@@ -298,6 +307,7 @@ $(".container-fluid.mymap").mapael({
                     $(".container-fluid.recommendations.dali").css({display: 'none'});
                     $(".container-fluid.recommendations.tokyo").css({display: 'none'});
                     $("#back_button").css({display: 'revert'});
+                    // automatically scrolls down the page
                     window.location.href="#beijing";
                 }
             }
@@ -329,6 +339,7 @@ $(".container-fluid.mymap").mapael({
                     $(".container-fluid.recommendations.dali").css({display: 'none'});
                     $(".container-fluid.recommendations.tokyo").css({display: 'none'});
                     $("#back_button").css({display: 'revert'});
+                    // automatically scrolls down the page
                     window.location.href="#chengdu";
                 }
             }
@@ -360,6 +371,7 @@ $(".container-fluid.mymap").mapael({
                     $(".container-fluid.recommendations.dali").css({display: 'revert'});
                     $(".container-fluid.recommendations.tokyo").css({display: 'none'});
                     $("#back_button").css({display: 'revert'});
+                    // automatically scrolls down the page
                     window.location.href="#dali";
                 }
             }
